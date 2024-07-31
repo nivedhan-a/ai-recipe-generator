@@ -6,7 +6,13 @@ const app = express();
 const PORT = 3001;
 
 // Enable CORS for all routes
-app.use(cors());
+app.use(cors(
+  {
+    origin: ["https://"],
+    methods: ["POST", "GET"],
+    credentials: true
+  }
+));
 
 // SSE Endpoint
 app.get("/recipeStream", (req, res) => {
