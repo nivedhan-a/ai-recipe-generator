@@ -77,7 +77,7 @@ app.get("/recipeStream", (req, res) => {
 });
 
 async function fetchOpenAICompletionsStream(messages, callback) {
-  const OPENAI_API_KEY = "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";
+  const OPENAI_API_KEY = "<sk-blahblah>";
   const openai = new OpenAI({ apiKey: OPENAI_API_KEY });
 
   const aiModel = "gpt-4-1106-preview";
