@@ -8,7 +8,7 @@ const PORT = 3001;
 // Enable CORS for all routes
 app.use(cors(
   {
-    origin: ["https://"],
+    origin: ["https://ai-recipe-generator-frontend.vercel.app"],
     methods: ["POST", "GET"],
     credentials: true
   }
